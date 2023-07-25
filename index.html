@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geek House - A casa dos nerds</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Pacifico&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header id="header" class="sticky-top navbar navbar-expand-lg p-4">
+        <div class="container">
+            <h1 class="navbar-brand section-title">Geek House</h1>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav id="navbarNav" class="navbar-collapse collapse justify-content-end">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link fw-bold">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre a loja
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#games" class="nav-link fw-bold">
+                            <i class="bi me-1 bi-controller"></i>
+                            Games
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#livros" class="nav-link fw-bold">
+                            <i class="bi me-1 bi-book"></i>
+                            Livros
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#vestuario" class="nav-link fw-bold">
+                            <i class="bi me-1 bi-handbag"></i>
+                            Vestuário
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link fw-bold">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#header" data-bs-smooth-scroll="true">
+        <section id="about" class="section-colored">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="/imgs/slides/xp_materia.jpg" alt="imagem do interior da loja">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="/imgs/slides/New-Bitmap-Image.jpg" alt="fotos de diversos jogos">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="/imgs/slides/books-1842261_640.jpg" alt="fotos de diversos jogos">
+                    </div>
+                </div>
+                <button type="button" data-bs-target="#carousel" class="carousel-control-prev" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button type="button" data-bs-target="#carousel" class="carousel-control-next" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" class="active" data-bs-target="#carousel" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img class="d-block w-100 rounded" src="/imgs/imagem loja.jpg" alt="espaço interno da loja">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="f-bangers">Sobre <span class="txt-colored">a loja</span></h2>
+                            <p>
+                                Bem-vindo à Geek house - a loja digital definitiva para entusiastas da cultura geek! Aqui, você encontrará um universo de produtos cuidadosamente selecionados para satisfazer a sua paixão por games, filmes, quadrinhos, tecnologia e tudo o que é nerd.
+                            </p>
+                            <h3 class="f-bangers fs-4">Sobre <span class="txt-colored">o interior</span></h3>
+                            <p>
+                                Explore nossas prateleiras repletas de livros e HQs cuidadosamente selecionados, onde cada história o levará a mundos fantásticos e aventuras inesquecíveis.
+                                Para os gamers, oferecemos um cantinho especial com os mais recentes lançamentos e clássicos imortais. 
+                                Explore nosso paraíso geek de vestuário - camisetas temáticas e acessórios que expressam sua paixão com orgulho!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-5 pb-5" id="games">
+            <div class="container">
+                <h2 class="text-center f-bangers mb-4">Nossos <span class="txt-colored">games</span></h2>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-products">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#playstation" class="fw-bold text-start nav-link txt-colored active">Playstation</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#xbox" class="fw-bold text-start nav-link txt-colored">Xbox</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#nintendo" class="fw-bold text-start nav-link txt-colored">Nintendo</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#tabuleiro" class="fw-bold text-start nav-link txt-colored">Tabuleiro</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="playstation">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/games/playstation/ghost-of-tsushima.jpg" alt="imagem jogo ghost of tsushima">
+                                        <h5 class="txt-colored mt-2 fw-bold">Ghost of Tsushima</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 575,93</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/games/playstation/hogwarts-legacy.jpg" alt="imagem jogo Hogwarts legacy">
+                                        <h5 class="txt-colored mt-2 fw-bold">Hogwarts Legacy</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 403,16</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/games/playstation/marvel-game.jpg" alt="imagem jogo Marvel's Avengers">
+                                        <h5 class="txt-colored mt-2 fw-bold">Marvel's Avengers</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 288,00</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/games/playstation/ghost-of-tsushima.jpg" alt="imagem jogo ghost of tsushima">
+                                        <h5 class="txt-colored mt-2 fw-bold">Ghost of Tsushima</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 575,93</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="xbox">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/games/xbox/assasins-creed-origins.jpg" alt="imagem jogo Assasins Creed origins">
+                                        <h5 class="txt-colored mt-2 fw-bold">Assasins Creed origins</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 129,99</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/games/xbox/destiny-2.jpg" alt="imagem jogo Destiny 2">
+                                        <h5 class="txt-colored mt-2 fw-bold">Destiny 2</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 119,99</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/games/xbox/assasins-creed-origins.jpg" alt="imagem jogo Assasins Creed origins">
+                                        <h5 class="txt-colored mt-2 fw-bold">Assasins Creed origins</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 129,99</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/games/xbox/star-wars-jedi-fallen.jpg" alt="imagem jogo Star Wars">
+                                        <h5 class="txt-colored mt-2 fw-bold">Star Wars</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 187,00</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="nintendo">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/games/nintendo/captain toad.webp" alt="imagem jogo Captain Toad">
+                                        <h5 class="txt-colored mt-2 fw-bold">Captain Toad</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 575,83</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/games/nintendo/crash-4.jpg" alt="imagem jogo Crash-4">
+                                        <h5 class="txt-colored mt-2 fw-bold">Crash 4</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 230,37</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/games/nintendo/ultimate alliance marvel.webp" alt="imagem jogo Marvel Ultimate Alliance">
+                                        <h5 class="txt-colored mt-2 fw-bold">Marvel Ultimate Alliance</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 444,94</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/games/nintendo/crash-4.jpg" alt="imagem jogo Crash-4">
+                                        <h5 class="txt-colored mt-2 fw-bold">Crash 4</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 230,37</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/games/nintendo/captain toad.webp" alt="imagem jogo Captain Toad">
+                                        <h5 class="txt-colored mt-2 fw-bold">Captain Toad</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 575,83</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tabuleiro">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/games/tabuleiro/arkham horror.webp" alt="imagem jogo Arkham horror">
+                                        <h5 class="txt-colored mt-2 fw-bold">Arkham horror</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 79,99</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/games/tabuleiro/marvel united.webp" alt="imagem jogo Marvel United">
+                                        <h5 class="txt-colored mt-2 fw-bold">Marvel United</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 56,99</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/games/tabuleiro/zombicide.webp" alt="imagem jogo zombicide">
+                                        <h5 class="txt-colored mt-2 fw-bold">Zombicide</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 49,99</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/games/tabuleiro/marvel united.webp" alt="imagem jogo Marvel United">
+                                        <h5 class="txt-colored mt-2 fw-bold">Marvel United</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 56,99</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/games/tabuleiro/arkham horror.webp" alt="imagem jogo Arkham horror">
+                                        <h5 class="txt-colored mt-2 fw-bold">Arkham horror</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 79,99</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/games/tabuleiro/zombicide.webp" alt="imagem jogo zombicide">
+                                        <h5 class="txt-colored mt-2 fw-bold">Zombicide</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 49,99</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-5 pb-5 section-colored" id="livros">
+            <div class="container">
+                <h2 class="text-center f-bangers mb-4">Nossos <span class="txt-colored">livros</span></h2>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-products">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#aventura" class="fw-bold text-start nav-link txt-colored active">Aventura</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#ficcao" class="fw-bold text-start nav-link txt-colored">Ficção</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#herois" class="fw-bold text-start nav-link txt-colored">Heróis</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="aventura">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/livros/aventura/livro-os-filhos-de-hurin-01a.jpg" alt="capa do livro Os filhos de Hurin">
+                                        <h5 class="txt-colored mt-2 fw-bold">Os filhos de Hurin</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 83,90</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/livros/aventura/livro-queda-de-gondolin-01.jpg" alt="capa do livro Queda de Gondolin">
+                                        <h5 class="txt-colored mt-2 fw-bold">A Queda de Gondolin</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 83,90</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/livros/aventura/livro-the-witcher-a-espada-do-destino-01-1.jpg" alt="capa do livro the witcher A espada do destino">
+                                        <h5 class="txt-colored mt-2 fw-bold">A espada do destino</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 54,90</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/livros/aventura/livro-os-filhos-de-hurin-01a.jpg" alt="capa do livro Os filhos de Hurin">
+                                        <h5 class="txt-colored mt-2 fw-bold">Os filhos de Hurin</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 83,90</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/livros/aventura/livro-the-witcher-a-espada-do-destino-02-1.jpg" alt="capa do livro the witcher A espada do destino 02">
+                                        <h5 class="txt-colored mt-2 fw-bold">A espada do destino 2</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 64,90</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="ficcao">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/livros/ficcao/b30beb353c.webp" alt="Capa do livro Assasins Creed">
+                                        <h5 class="txt-colored mt-2 fw-bold">Assasins Creed</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 69,99</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/livros/ficcao/livro-aquela-fortaleza-medonha-c-w-lewis.jpg" alt="Capa livro aquela fortaleza medonha">
+                                        <h5 class="txt-colored mt-2 fw-bold">Aquela fortaleza medonha</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 48,90</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/livros/ficcao/livro-justiça-ancilar-01.jpg" alt="Capa livro Justiça Ancilar">
+                                        <h5 class="txt-colored mt-2 fw-bold">Justiça Ancilar</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 27,90</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/livros/ficcao/livro-terceira-humanidade-04.jpg" alt="Capa livro Terceira humanidade">
+                                        <h5 class="txt-colored mt-2 fw-bold">Terceira humanidade</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 27,90</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="herois">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/livros/herois/pantera negra book.jpg" alt="Capa livro Pantera negra">
+                                        <h5 class="txt-colored mt-2 fw-bold">Pantera negra</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 46,90</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/livros/herois/quarteto fantastico book.webp" alt="Capa livro Quarteto Fantástico">
+                                        <h5 class="txt-colored mt-2 fw-bold">Quarteto Fantástico</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 53,90</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/livros/herois/pantera negra book.jpg" alt="Capa livro Pantera negra">
+                                        <h5 class="txt-colored mt-2 fw-bold">Pantera negra</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 46,90</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/livros/herois/vingadores ultimato book.webp" alt="Capa livro Vingadores Ultimato">
+                                        <h5 class="txt-colored mt-2 fw-bold">Vingadores Ultimato</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 64,90</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/livros/herois/quarteto fantastico book.webp" alt="Capa livro Quarteto Fantástico">
+                                        <h5 class="txt-colored mt-2 fw-bold">Quarteto Fantástico</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 53,90</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-5 pb-5" id="vestuario">
+            <div class="container">
+                <h2 class="text-center f-bangers mb-4">Nosso <span class="txt-colored">vestuário</span></h2>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-products">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#camisetas" class="fw-bold text-start nav-link txt-colored active">Camisetas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#casacos" class="fw-bold text-start nav-link txt-colored">Casacos</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#acessorios" class="fw-bold text-start nav-link txt-colored">Acessórios</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="camisetas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/vestuario/camisas/geek gamer shirt.jpg" alt="Camiseta Geek gamer">
+                                        <h5 class="txt-colored mt-2 fw-bold">Geek gamer</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 43,90</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/vestuario/camisas/lannister shirt.jpg" alt="Camiseta cas lannister Game of thrones">
+                                        <h5 class="txt-colored mt-2 fw-bold">Camiseta casa lannister</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 56,89</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/vestuario/camisas/punisher shirt.jpg" alt="camiseta punisher">
+                                        <h5 class="txt-colored mt-2 fw-bold">Camiseta Punisher</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 62,90</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/vestuario/camisas/spiderman shirt.jpg" alt="camiseta do homem aranha">
+                                        <h5 class="txt-colored mt-2 fw-bold">Camiseta Spider Man</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 53,90</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/vestuario/camisas/geek gamer shirt.jpg" alt="Camiseta Geek gamer">
+                                        <h5 class="txt-colored mt-2 fw-bold">Geek gamer</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 43,90</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="casacos">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/vestuario/casacos/akatsuki coat.jpg" alt="Casaco da akatsuki nuvem vermelha">
+                                        <h5 class="txt-colored mt-2 fw-bold">Manto da Akatsuki</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 69,99</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/vestuario/casacos/harry potter coat.jpg" alt="Casaco harry potter">
+                                        <h5 class="txt-colored mt-2 fw-bold">Casaco Harry Potter</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 48,90</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/vestuario/casacos/jujutsu coat.jpg" alt="Casaco jujutsu kaisen gojo satoru">
+                                        <h5 class="txt-colored mt-2 fw-bold">Casaco Jujutsu Kaisen</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 67,90</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/vestuario/casacos/mugiwara coat.jpg" alt="Casaco simbolo dos Chapeus de palha One piece">
+                                        <h5 class="txt-colored mt-2 fw-bold">Casaco One Piece </h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 77,90</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="acessorios">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/vestuario/acessorios/bracelete mugiwara.jpg" alt="bracelete caveira One piece">
+                                        <h5 class="txt-colored mt-2 fw-bold">Bracelete One Piece</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 36,90</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/vestuario/acessorios/colar avatar elemento ar.jpg" alt="Colar Avatar elemento ar">
+                                        <h5 class="txt-colored mt-2 fw-bold">Colar Avatar elemento ar</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 43,90</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/vestuario/acessorios/Colar Avatar elemento pedra.jpg" alt="Colar Avatar elemento terra">
+                                        <h5 class="txt-colored mt-2 fw-bold">Colar Avatar elemento terra</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 43,90</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/vestuario/acessorios/colar fullmetal Alchemist.jpg" alt="Colar fullmetal alchemist">
+                                        <h5 class="txt-colored mt-2 fw-bold">Colar Fullmetal Alchemist</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 54,90</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="w-100 d-block" src="/imgs/vestuario/acessorios/bracelete mugiwara.jpg" alt="bracelete caveira One piece">
+                                        <h5 class="txt-colored mt-2 fw-bold">Bracelete One Piece</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        </p>
+                                        <strong>R$ 36,90</strong>
+                                        <button class="product-btn rounded" type="button">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-5 pb-5 section-colored" id="contact">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center f-bangers mb-4">Fale <span class="txt-colored">conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form id="formulario">
+                            <div class="mb-3">
+                                <label class="form-label fw-bold txt-colored" for="nome">Seu nome</label>
+                                <input type="text" id="nome" class="form-control" name="nome" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold txt-colored" for="email">Seu email</label>
+                                <input type="email" id="email" class="form-control" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold txt-colored" for="telefone">Seu telefone (opcional)</label>
+                                <input type="tel" id="telefone" class="form-control" name="telefone" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold txt-colored" for="mensagem">Sua mensagem</label>
+                                <textarea id="mensagem" class="form-control" name="mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="f-bangers txt-colored fs-4">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5 me-1">
+                                    <a href="#">
+                                        <i class="bi txt-colored bi-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi txt-colored bi-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi txt-colored bi-whatsapp"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi txt-colored bi-tiktok"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="txt-colored f-bangers fs-4">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>Rua das Flores, N° 1234, Bairro Imaginário - Manaus-AM </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</body>
+</html>

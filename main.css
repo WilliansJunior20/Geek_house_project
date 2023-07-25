@@ -1,0 +1,94 @@
+.section-title {
+    font-family:  'Bangers', cursive;
+    color: #fff;
+    font-size: 32px;
+}
+
+.f-bangers {
+    font-family:  'Bangers', cursive;
+}
+
+body {
+    font-family: Roboto, sans-serif ;
+}
+
+#header .nav .nav-link.active {
+    background-color: #fff;
+    color: #1ace83;
+}
+
+.nav-products .nav-link.active {
+    background-color: #1ace83;
+    color: #fff;
+}
+
+.txt-colored {
+    color: #1ace83;
+}
+
+.navbar-brand:hover, 
+#header .nav .nav-link,
+.nav-products .nav-link.active:hover {
+    color: #fff;
+}
+
+.navbar {
+    background-color: #1ace83;
+}
+
+.carousel-inner img {
+    width: 1500px;
+    height: 700px;
+}
+
+.section-colored {
+    background-color: #ceffea96;
+}
+
+.product-btn {
+    background-color: #1ace83;
+    color: #fff;
+    width: 100%;
+    border: none;
+    padding: 6px;
+    margin-top: 8px;
+    margin-bottom: 18px;
+}
+
+.tab-content img {
+    height: 250px;
+}
+
+.nav-products .nav-link:hover {
+    color: #1ace83;
+}
+
+#contact button {
+    background-color: #1ace83;
+    color: #fff;
+}
+
+#contact textarea {
+    resize: none;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+@media(max-width: 767px) {
+    .carousel-item img {
+        width: 550px;
+        height: 290px;
+    }
+
+    .tab-content img {
+        margin-top: 16px;
+        height: 550px;
+    }
+}
